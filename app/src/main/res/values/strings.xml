@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Rionegro</string>
+    <string name="demografia">Demografía</string>
+    <string name="turismo">Turismo</string>
+    <string name="diversion">Diversión</string>
+    <string name="hospedaje">Hospedaje</string>
+    <string name="inicio">Inicio</string>
+
+
+</resources>
