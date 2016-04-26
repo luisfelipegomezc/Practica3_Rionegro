@@ -18,7 +18,11 @@
         <activity android:name=".Demografia" />
         <activity android:name=".Turismo" />
         <activity android:name=".Diversion" />
-        <activity android:name=".Hospedaje"></activity>
+        <activity android:name=".Hospedaje" />
+        <activity android:name=".Main2Activity">
+
+
+        </activity>
     </application>
 
 </manifest>

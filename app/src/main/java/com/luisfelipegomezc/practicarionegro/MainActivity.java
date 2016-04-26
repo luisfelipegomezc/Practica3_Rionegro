@@ -1,5 +1,7 @@
 package com.luisfelipegomezc.practicarionegro;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,7 +24,35 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-        public void Demo(View view){
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id=item.getItemId();
+
+        FragmentManager fm=getFragmentManager();
+        FragmentTransaction ft=fm.beginTransaction();
+
+        if (id==R.id.mParque){
+            ParqueFragment fragment =new ParqueFragment();
+            ft.replace(android.R.id.content, fragment).commit();
+        }
+        if (id==R.id.mPuente){
+            PuenteFragment fragment =new PuenteFragment();
+            ft.replace(android.R.id.content, fragment).commit();
+        }
+        if (id==R.id.mRionegro){
+            RionegroFragment fragment =new RionegroFragment();
+            ft.replace(android.R.id.content, fragment).commit();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void Demo(View view){
             Intent intent=new Intent(MainActivity.this, Demografia.class);
             startActivity(intent);
         }

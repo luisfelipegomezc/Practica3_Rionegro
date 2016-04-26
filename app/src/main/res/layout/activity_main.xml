@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-<LinearLayout
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -16,33 +14,19 @@
     android:orientation="vertical"
     android:weightSum="1">
 
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/fragmentParque"
-        tools:layout="@layout/fragment_parque"/>
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/fragmentPuente"
-        tools:layout="@layout/fragment_puente"/>
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/fragmentRionegro"
-        tools:layout="@layout/fragment_rionegro"/>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textSize="35sp"
+        android:textSize="30sp"
         android:gravity="center"/>
+
     <ImageView
-        android:layout_width="326dp"
-        android:layout_height="100dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
         android:src="@drawable/draw_rionegro"
-        android:layout_weight="0.38" />
+        android:layout_weight="0.17"
+        android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="match_parent"
@@ -155,5 +139,5 @@
 
 
 
+
 </LinearLayout>
-</ScrollView>
