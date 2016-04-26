@@ -5,6 +5,12 @@
     <string name="diversion">Diversión</string>
     <string name="hospedaje">Hospedaje</string>
     <string name="inicio">Inicio</string>
+    <string name="parque">Parque</string>
+    <string name="puente">Puente</string>
+    <string name="rionegro">Rionegro</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
