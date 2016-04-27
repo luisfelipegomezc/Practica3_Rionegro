@@ -1,6 +1,7 @@
 package com.luisfelipegomezc.practicarionegro;
 
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
@@ -8,6 +9,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 
 public class Main3Activity extends AppCompatActivity {
@@ -49,6 +51,13 @@ public class Main3Activity extends AppCompatActivity {
         actionBar.addTab(tab);
         tab = actionBar.newTab().setText("Rionegro").setTabListener(tabListener);
         actionBar.addTab(tab);
+
+        mViewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
+            @Override
+            public void onPageSelected(int position) {
+                getSupportActionBar().setSelectedNavigationItem(position);
+            }
+        });
     }
 
     public class PagerAdapter extends FragmentPagerAdapter{
@@ -72,5 +81,14 @@ public class Main3Activity extends AppCompatActivity {
         public int getCount() {
             return 3;
         }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+    public void Inic(View view){
+        Intent intent=new Intent(Main3Activity.this, MainActivity.class);
+        startActivity(intent);
     }
 }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/mParque"
-        android:title="@string/parque">
+    <item android:id="@+id/mVista"
+        android:title="@string/vista">
     </item>
-    <item android:id="@+id/mPuente"
-        android:title="@string/puente">
+    <item android:id="@+id/mInicio"
+        android:title="@string/inicio">
     </item>
     <item android:id="@+id/mRionegro"
         android:title="@string/rionegro">

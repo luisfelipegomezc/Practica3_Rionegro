@@ -16,6 +16,7 @@
         <TextView
            style="@style/textViewStyle"
             android:text="hermosa Plaza de Rinegro" />
+
     </LinearLayout>
 
 </FrameLayout>

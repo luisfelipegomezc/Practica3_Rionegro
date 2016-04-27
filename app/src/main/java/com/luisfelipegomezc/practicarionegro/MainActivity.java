@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
-
+/*
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id=item.getItemId();
@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
             //ft.replace(android.R.id.content, fragment).commit();
         }
         return super.onOptionsItemSelected(item);
-    }
+
+    }*/
 
     public void Demo(View view){
             Intent intent=new Intent(MainActivity.this, Demografia.class);
