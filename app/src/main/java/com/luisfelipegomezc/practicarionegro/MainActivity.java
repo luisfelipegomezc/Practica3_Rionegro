@@ -19,7 +19,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        FragmentManager fm= getFragmentManager();
+        FragmentTransaction ft= fm.beginTransaction();
 
+        ParqueFragment fragment = new ParqueFragment();
+        //ft.add(android.R.id.content, fragment).commit();
 
 
     }
@@ -39,15 +43,15 @@ public class MainActivity extends AppCompatActivity {
 
         if (id==R.id.mParque){
             ParqueFragment fragment =new ParqueFragment();
-            ft.replace(android.R.id.content, fragment).commit();
+            //ft.replace(android.R.id.content, fragment).commit();
         }
         if (id==R.id.mPuente){
             PuenteFragment fragment =new PuenteFragment();
-            ft.replace(android.R.id.content, fragment).commit();
+            //ft.replace(android.R.id.content, fragment).commit();
         }
         if (id==R.id.mRionegro){
             RionegroFragment fragment =new RionegroFragment();
-            ft.replace(android.R.id.content, fragment).commit();
+            //ft.replace(android.R.id.content, fragment).commit();
         }
         return super.onOptionsItemSelected(item);
     }
