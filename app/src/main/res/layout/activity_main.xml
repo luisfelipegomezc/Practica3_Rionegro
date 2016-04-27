@@ -22,11 +22,8 @@
         android:gravity="center"/>
 
     <ImageView
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/draw_rionegro"
-        android:layout_weight="0.17"
-        android:layout_gravity="center_horizontal" />
+        style="@style/imageViewStyle"
+        android:src="@drawable/draw_escudo" />
 
     <TextView
         android:layout_width="match_parent"
@@ -130,12 +127,6 @@
         android:layout_height="wrap_content"
         android:textSize="10sp"/>
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:src="@drawable/draw_escudo"
-        android:layout_weight="0.31"
-        android:layout_gravity="center_horizontal" />
 
 
 
