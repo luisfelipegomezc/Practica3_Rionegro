@@ -75,4 +75,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent=new Intent(MainActivity.this, Hospedaje.class);
             startActivity(intent);
         }
+        public void Vis(View view){
+            Intent intent=new Intent(MainActivity.this, Main3Activity.class);
+            startActivity(intent);
+        }
 }
