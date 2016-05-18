@@ -88,11 +88,15 @@
             android:text="Desarrollo"
             android:textSize="20sp"
             android:gravity="center"/>
-        <TextView
+        <Button
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textSize="20sp"
-            android:text="             "/>
+            android:layout_height="wrap_content"
+            android:text="@string/mapa"
+            android:textSize="10sp"
+            android:onClick="Map"
+            android:id="@+id/bMap"
+            android:background="#9c8050"
+            android:gravity="center"/>
         <ImageView
             android:layout_width="137dp"
             android:layout_height="104dp"

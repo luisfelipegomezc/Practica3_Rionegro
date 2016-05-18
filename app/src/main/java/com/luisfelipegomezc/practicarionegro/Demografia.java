@@ -32,4 +32,9 @@ public class Demografia extends AppCompatActivity {
         Intent intent=new Intent(Demografia.this, Hospedaje.class);
         startActivity(intent);
     }
+    public void Map(View view){
+        Intent intent=new Intent(Demografia.this, MapsActivity.class);
+        intent.putExtra("mapa",5);
+        startActivity(intent);
+    }
 }

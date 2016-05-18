@@ -30,11 +30,15 @@
             android:text="Catedral"
             android:textSize="20sp"
             android:gravity="center"/>
-        <TextView
+        <Button
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textSize="20sp"
-            android:text="             "/>
+            android:layout_height="wrap_content"
+            android:text="@string/mapa"
+            android:textSize="10sp"
+            android:onClick="Map"
+            android:id="@+id/bMap"
+            android:background="#9c8050"
+            android:gravity="center"/>
 
         <ImageView
             android:layout_width="130dp"
@@ -60,11 +64,15 @@
             android:layout_width="140dp"
             android:layout_height="105dp"
             android:src="@drawable/draw_comfama" />
-        <TextView
+        <Button
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textSize="20sp"
-            android:text="         "/>
+            android:layout_height="wrap_content"
+            android:text="@string/mapa"
+            android:textSize="10sp"
+            android:onClick="Map1"
+            android:id="@+id/bMap1"
+            android:background="#9c8050"
+            android:gravity="center"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -88,11 +96,15 @@
             android:text="Corregimiento"
             android:textSize="20sp"
             android:gravity="center"/>
-        <TextView
+        <Button
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textSize="20sp"
-            android:text="             "/>
+            android:layout_height="wrap_content"
+            android:text="@string/mapa"
+            android:textSize="10sp"
+            android:onClick="Map2"
+            android:id="@+id/bMap2"
+            android:background="#9c8050"
+            android:gravity="center"/>
         <ImageView
             android:layout_width="130dp"
             android:layout_height="95dp"

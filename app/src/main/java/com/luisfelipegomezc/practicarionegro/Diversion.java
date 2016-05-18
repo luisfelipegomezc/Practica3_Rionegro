@@ -32,4 +32,14 @@ public class Diversion extends AppCompatActivity {
         Intent intent=new Intent(Diversion.this, Hospedaje.class);
         startActivity(intent);
     }
+    public void Map(View view){
+        Intent intent=new Intent(Diversion.this, MapsActivity.class);
+        intent.putExtra("mapa",6);
+        startActivity(intent);
+    }
+    public void Map1(View view){
+        Intent intent=new Intent(Diversion.this, MapsActivity.class);
+        intent.putExtra("mapa",7);
+        startActivity(intent);
+    }
 }

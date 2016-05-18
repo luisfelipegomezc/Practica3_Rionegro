@@ -35,4 +35,19 @@ public class Turismo extends AppCompatActivity {
         Intent intent=new Intent(Turismo.this, Demografia.class);
         startActivity(intent);
     }
+    public void Map(View view){
+        Intent intent=new Intent(Turismo.this, MapsActivity.class);
+        intent.putExtra("mapa",2);
+        startActivity(intent);
+    }
+    public void Map1(View view){
+        Intent intent=new Intent(Turismo.this, MapsActivity.class);
+        intent.putExtra("mapa",4);
+        startActivity(intent);
+    }
+    public void Map2(View view){
+        Intent intent=new Intent(Turismo.this, MapsActivity.class);
+        intent.putExtra("mapa",3);
+        startActivity(intent);
+    }
 }

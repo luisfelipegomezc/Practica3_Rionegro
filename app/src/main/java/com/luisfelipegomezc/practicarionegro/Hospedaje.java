@@ -31,4 +31,19 @@ public class Hospedaje extends AppCompatActivity {
         Intent intent=new Intent(Hospedaje.this, Demografia.class);
         startActivity(intent);
     }
+    public void Map(View view){
+        Intent intent=new Intent(Hospedaje.this, MapsActivity.class);
+        intent.putExtra("mapa",8);
+        startActivity(intent);
+    }
+    public void Map1(View view){
+        Intent intent=new Intent(Hospedaje.this, MapsActivity.class);
+        intent.putExtra("mapa",9);
+        startActivity(intent);
+    }
+    public void Map2(View view){
+        Intent intent=new Intent(Hospedaje.this, MapsActivity.class);
+        intent.putExtra("mapa",10);
+        startActivity(intent);
+    }
 }

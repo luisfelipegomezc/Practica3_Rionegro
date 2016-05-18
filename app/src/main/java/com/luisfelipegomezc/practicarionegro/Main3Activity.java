@@ -91,4 +91,11 @@ public class Main3Activity extends AppCompatActivity {
         Intent intent=new Intent(Main3Activity.this, MainActivity.class);
         startActivity(intent);
     }
+
+    public void Map(View view){
+        Intent intent=new Intent(Main3Activity.this, MapsActivity.class);
+        intent.putExtra("mapa",1);
+        startActivity(intent);
+    }
 }
+//@string/google_maps_key
